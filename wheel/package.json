@@ -1,0 +1,16 @@
+{
+  "name": "wheel",
+  "main": "app.js",  
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.3.3",
+    "ejs": "*",
+    "occamsrazor": "2.2.2",    
+    "forrest": "git+https://github.com/sithmel/forRest.js.git"
+  },
+  "plugin": {
+      "consumes": [],
+      "provides": ["wheel"]
+  }
+}
