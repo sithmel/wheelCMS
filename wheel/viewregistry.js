@@ -1,5 +1,6 @@
-var or = require('occamsrazor');
-
+var or = require('occamsrazor'),
+    url = require('url');
+    
 var ViewRegistry = or();
 
 // view: req, context
@@ -13,7 +14,7 @@ BaseView.prototype.render = function (res){
 };
 
 var isEmptyUrl = or.chain(or.isAnything, function (req){
-    return req.url === '/';
+    return url.parse(req.url).pathname === '/';
 });
 
 ViewRegistry.addNew([isEmptyUrl, or.isAnything], BaseView);

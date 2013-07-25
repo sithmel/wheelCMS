@@ -1,9 +1,10 @@
 [
   {
-      "packagePath": "../exp",
+      "packagePath": "../wheel",
       "port": 3000
   },
   {
-      "packagePath": "../app1"
+      "packagePath": "../app1",
+      "basepath": "storage"
   }
 ]

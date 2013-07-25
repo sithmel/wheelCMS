@@ -28,12 +28,12 @@ module.exports = function setup(options, imports, register) {
     expr.use(express.cookieParser('your secret here'));
     expr.use(express.session());
 
-    app.use(forrest.traversalMiddleware(TraversalRegistry, {type: 'directory', path: ''}));
-    app.use(forrest.viewMiddleware(ViewRegistry));
-    app.use(forrest.authMiddleware(AuthRegistry));
+    expr.use(forrest.traversalMiddleware(TraversalRegistry, {type: 'directory', path: ''}));
+    expr.use(forrest.viewMiddleware(ViewRegistry));
+    expr.use(forrest.authMiddleware(AuthRegistry));
     
     
-    app.use(forrest.renderMiddleware);
+    expr.use(forrest.renderMiddleware);
 
 
 //    expr.use(expr.router);

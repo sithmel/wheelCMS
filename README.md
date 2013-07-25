@@ -6,7 +6,7 @@ An experimental Content Management System for node.js.
 CMS
 ---
 
-Despite of the name, WheelCMS is not intended to be a full fledged CMS. It is a platform for build modular/content based web application.
+Despite of the name, WheelCMS is not intended to be a full fledged CMS. It is a platform for building modular/content based web applications.
 
 About the name
 ==============
